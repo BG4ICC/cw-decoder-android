@@ -1,0 +1,19 @@
+CW 解码器（CW AI Decoder for Android）
+Copyright (C) 2026 BG4ICC
+
+本软件包含以下第三方组件：
+
+1. DeepCW 内核（模型与参考实现）
+   https://github.com/e04/deepcw-engine
+   License: AGPL-3.0-only
+   本仓库 deepcw/ 目录下的 model.onnx、ednet.onnx、model.onnx.json 来自该项目；
+   dcwpre.js / dcwlm.js / dcwworker.js 为基于其参考实现的移植与扩展。
+
+2. ONNX Runtime Web
+   https://github.com/microsoft/onnxruntime
+   License: MIT
+   本仓库 deepcw/ 目录下的 ort.wasm.min.js、ort-wasm-simd-threaded.mjs、
+   ort-wasm-simd-threaded.wasm 来自该项目。
+
+3. 内嵌于 index.html 的 CWNET / KEYNET 权重（Base64 数据块）
+   为本项目作者 BG4ICC 自行训练的键控/纠错网络，随本仓库以 AGPL-3.0-only 发布。

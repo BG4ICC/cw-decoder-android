@@ -1,0 +1,14 @@
+# 签名密钥（私钥，绝不上传）
+*.keystore
+*.jks
+
+# 构建产物
+*.apk
+out/
+/tmp/
+build*.log
+
+# 台架/测试现场
+.build/
+node_modules/
+__pycache__/
